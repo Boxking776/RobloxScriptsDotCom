@@ -26,6 +26,12 @@ function TP(part)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part
 end
 
+for i,v in pairs(game:GetService("Workspace").Eggs:GetChildren()) do
+    if string.find(v.Name,"RocketEgg") then
+v:Destroy()
+end
+end       
+
 while true do 
 for i,e in pairs(game:GetService("Workspace").Eggs:GetChildren()) do
     if string.find(e.Name,"GnomeEgg" or "RocketEgg" or "SubmarineEgg") and e:IsA("MeshPart") and e.Part.Transparency == 0.5 then
