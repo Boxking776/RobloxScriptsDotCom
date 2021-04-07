@@ -1,4 +1,4 @@
-return function(title,text,icon,duration)
+return function Note(title,text,icon,duration)
 game.StarterGui:SetCore("SendNotification", {
 Title = title;
 Text = "Removed Collectibles";
