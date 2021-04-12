@@ -18,7 +18,7 @@ player.Character.Humanoid.Died:Connect(function()
 
 SendMessage({
 Text = DeathMessages[math.random(#DeathMessages)],
-Color = Color3.fromRGB(0,0,0)
+Color = Color3.fromRGB(225,225,225)
 })
 
 end)
@@ -28,7 +28,7 @@ Character:WaitForChild("Humanoid").Died:Connect(function()
 
 SendMessage({
 Text = DeathMessages[math.random(#DeathMessages)],
-Color = Color3.fromRGB(0,0,0)
+Color = Color3.fromRGB(225,225,225)
 })
 
 end)
